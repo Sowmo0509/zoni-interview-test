@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Home() {
   const [queryText, setQueryText] = useState("");
   const [errorText, setErrorText] = useState("");
-  const [searchData, setSearchData] = useState([]);
+  const [searchData, setSearchData] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSearch = async () => {
