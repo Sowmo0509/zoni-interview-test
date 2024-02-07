@@ -1,13 +1,8 @@
 "use client";
 import StudentTable from "@/components/table/StudentTable";
-import { useGetStudentQuery } from "@/redux/services/student";
-import { setStudent } from "@/redux/slices/studentSlice";
-import { RootState } from "@/redux/store";
-import { Card, CardHeader, CardBody, Heading, Text, Button, Box, Table, Thead, Tbody, Tr, Th, Td, TableContainer, Spinner, Center, Input, Flex } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Heading, Text, Button, Box, Spinner, Center, Input, Flex } from "@chakra-ui/react";
 import axios from "axios";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 
 export default function Home() {
   const [queryText, setQueryText] = useState("");
